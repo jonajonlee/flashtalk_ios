@@ -12,41 +12,51 @@ import UIKit
 
 class SecondViewController: UIViewController, UITextFieldDelegate {
 
+/*###########################################*/
+// object variables
+/*###########################################*/
+    
     @IBOutlet weak var newItemField: UITextField!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var delayLabel: UILabel!
 
+/*###########################################*/
+// configure delay
+/*###########################################*/
+    
     @IBAction func delaySet(sender: UISlider) {
         delaySec = Int(slider.value)
         delayLabel.text = String(Int(slider.value*2)) + " sec"
-        
     }
+
+/*###########################################*/
+// add new item
+/*###########################################*/
     
     @IBAction func AddNewPressed(sender: AnyObject) {
-   
         
         itemArr.append(newItemField.text!)
         NSUserDefaults.standardUserDefaults().setObject(itemArr, forKey: "itemArr")
         newItemField.text = ""
         newItemField.resignFirstResponder()
-        
     }
+
+/*###########################################*/
+// keyboard control and view setup
+/*###########################################*/
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
         self.newItemField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
     
         self.view.endEditing(true)
-        
     }
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool {
@@ -55,6 +65,5 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         AddNewPressed(self)
         return true
     }
-
 }
 

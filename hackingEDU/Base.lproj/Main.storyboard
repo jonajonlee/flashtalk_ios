@@ -43,7 +43,7 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="q8d-up-sQ8"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pO9-Kd-q9R">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pO9-Kd-q9R">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <animations/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -84,7 +84,7 @@
                                     <action selector="stopTest:" destination="9pv-A4-QxB" eventType="touchUpInside" id="U2L-84-TSn"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="FlashTalk_logo_25" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-DZ-sgE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FlashTalk_logo_25" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-DZ-sgE">
                                 <rect key="frame" x="138" y="38" width="99" height="24"/>
                                 <animations/>
                             </imageView>
@@ -92,19 +92,12 @@
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.35463982919999998" blue="0.39100023" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gJF-DZ-sgE" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="18" id="34K-2S-Ms4"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="pO9-Kd-q9R" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="8X1-xg-Pxy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gJF-DZ-sgE" secondAttribute="trailing" constant="118" id="Cau-Ml-Xxd"/>
                             <constraint firstItem="A6H-G3-Cfi" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="Cxr-CE-0gv"/>
-                            <constraint firstItem="pO9-Kd-q9R" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="IJf-YY-iZv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pO9-Kd-q9R" secondAttribute="trailing" constant="-20" id="QE6-Xd-wVL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="A6H-G3-Cfi" secondAttribute="trailing" constant="-21" id="bKw-6t-0ga"/>
-                            <constraint firstItem="gJF-DZ-sgE" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="118" id="bwX-mi-1A6"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                            <constraint firstItem="A6H-G3-Cfi" firstAttribute="top" secondItem="gJF-DZ-sgE" secondAttribute="bottom" constant="10" id="hrH-L8-Q38"/>
                             <constraint firstItem="A6H-G3-Cfi" firstAttribute="top" secondItem="pO9-Kd-q9R" secondAttribute="bottom" id="pu4-JE-Ytp"/>
                         </constraints>
                     </view>
